@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(imgs/folha.jpg);
+    padding: 45px;
+
+}
+
+
+.menu .active {
+    color: rgb(32, 249, 79);
+}
+
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-left: 16px;
+    padding: 5px;
+    font-weight: 700;
+    transition: color 0.5s ease-in;
+
+}
+
+.menu a:hover {
+    color: rgb(230, 255, 86);
+    box-shadow: rgba(237, 237, 237, 0.3) 0px 0px 0px 3px;
+    transition: box-shadow 0.5s;
+
+}
+
+.titulo h1{
+  
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 2px 2px #363636;
+    font-family: "Ubuntu", sans-serif;
+    margin: 50px;
+    font-weight: 700;
+    color: #d1ee28;
+    text-shadow: 1px 1px #363636;
+    background-color: #1f6402;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+
+.titulo1 h2{
+    margin-top: 50px;
+    color: #4F8D22;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    text-shadow: 2px 2px #363636;
+   
+}
+.titulo2 h2{
+    margin-top: 50px;
+    color: #4F8D22;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    text-shadow: 2px 2px #363636;
+}
+
+.titulo3 h2{
+    margin-top: 50px;
+    color: #4F8D22;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    text-shadow: 2px 2px #363636;
+}
+
+.texto{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.texto2{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.texto3{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+.imgsrodape img{
+    width: 30px;
+    height: 30px;
+    gap: 30px;
+}
+.imgsrodape{
+  
+
+}
+.follow h3{
+    font-weight: 700;
+    color: #d1ee28;
+    text-shadow: 1px 1px #363636;
+    background-color: #1f6402;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+}
+.rodape{
+  background-color: #4f8d22;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+   
+}
+.texto-img{
+}
+.logo img{
+    width: 70px;
+}
+
+@media screen and (max-width: 700px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

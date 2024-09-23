@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(imgs/folha.jpg);
+    padding: 45px;
+
+}
+
+
+.menu .active {
+    color: rgb(32, 249, 79);
+}
+
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-left: 16px;
+    padding: 5px;
+    font-weight: 700;
+    transition: color 0.5s ease-in;
+
+}
+
+.menu a:hover {
+    color: rgb(230, 255, 86);
+    box-shadow: rgba(237, 237, 237, 0.3) 0px 0px 0px 3px;
+    transition: box-shadow 0.5s;
+
+}
+.titulo h1{
+  
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 2px 2px #363636;
+    font-family: "Ubuntu", sans-serif;
+    margin: 50px;
+    font-weight: 700;
+    color: #d1ee28;
+    text-shadow: 1px 1px #363636;
+    background-color: #1f6402;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.texto{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    border: #363636 10px;
+    margin: 70px;
+   
+}
+.frase h2{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    color: white;
+   background-color:#4C6E4C;
+   width: 30%;
+   padding: 20px;
+   margin: 30px;
+}
+.fotoresenha img{
+    width: 550px;
+    box-shadow: rgba(70, 70, 70, 0.4) 5px 5px, rgba(51, 50, 50, 0.3) 10px 10px, rgba(43, 43, 43, 0.2) 15px 15px, rgba(42, 41, 41, 0.1) 20px 20px, rgba(39, 38, 38, 0.05) 25px 25px;
+   
+ 
+}
+.fotoresenha img:hover{
+    box-shadow: rgba(2, 204, 59, 0.4) 5px 5px, rgba(6, 193, 15, 0.3) 10px 10px, rgba(36, 198, 7, 0.2) 15px 15px, rgba(8, 206, 11, 0.1) 20px 20px, rgba(44, 198, 9, 0.05) 25px 25px;
+    transition: box-shadow 0.5s;
+    scale: 1.2;
+    transition: 0.25s;
+}
+.quebrar{
+    display: flex;
+    
+}
+.frase h2{
+    width: 450px;
+    box-shadow: rgba(70, 70, 70, 0.4) 5px 5px, rgba(51, 50, 50, 0.3) 10px 10px, rgba(43, 43, 43, 0.2) 15px 15px, rgba(42, 41, 41, 0.1) 20px 20px, rgba(39, 38, 38, 0.05) 25px 25px;
+   
+}
+.frase h2:hover{
+    box-shadow: rgba(2, 204, 59, 0.4) 5px 5px, rgba(6, 193, 15, 0.3) 10px 10px, rgba(36, 198, 7, 0.2) 15px 15px, rgba(8, 206, 11, 0.1) 20px 20px, rgba(44, 198, 9, 0.05) 25px 25px;
+    transition: box-shadow 0.5s;
+}
+*{
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 10px;
+   
+   
+  }
+  
+  .rating {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    
+    position: relative;
+  }
+  
+  .rating-0 {
+    filter: grayscale(100%);
+  }
+  
+  .rating>input {
+    display: none;
+  }
+  
+  .rating>label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76%;
+    transition: .3s;
+  }
+  
+  .rating>input:checked~label,
+  .rating>input:checked~label~label {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  }
+  
+  .feedback {
+    max-width: 360px;
+  
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+  }
+  h3{
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #d1ee28;
+    text-shadow: 1px 1px #363636;
+    background-color: #1f6402;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .imgsrodape img{
+    width: 30px;
+    height: 30px;
+    gap: 30px;
+}
+.imgsrodape{
+  
+
+}
+.follow h3{
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-size: 17px;
+}
+.rodape{
+  background-color: #4f8d22;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+   
+}
+.texto-img{
+}
+.logo img{
+    width: 70px;
+}
+
+@media screen and (max-width: 700px) {
+  .menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
